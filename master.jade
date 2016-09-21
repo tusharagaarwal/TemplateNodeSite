@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		meta(name="vieport", content="width=device-width, initial-scale=1.0")
+		meta(name="encoding", value="utf-8")
+		meta(name="author", value="tusharagaarwal@gmail.com")
+		title= pagetitle+"-"+applicationname
+		script
+			console.log(Date() + ": Application loaded")
+		link(rel="stylesheet", href="./style.css")
+		link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+	body
+		div#maincontainer
+			header#topheader
+				h1= applicationname
+			section#contentsection
+				block content
+			//unless shownav=="false"
+				//include nav
+			//section
+				//unless showaside=="false"
+					//include aside
+			include footer_widget
+			

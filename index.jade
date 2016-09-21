@@ -1,0 +1,27 @@
+extends master
+block content
+	nav
+	article
+		header
+			| Select the form name
+		p
+			form(action="/getdata" method="GET")
+				.row.form-group
+					label.col-md-4(name="formname" for="formname") Form Name
+					.col-md-8
+						select.form-control(id="formname" required autofocus="true"  name="formname" placeholder="Formname")
+							for names in formnames
+								option(value= names)= names
+				// add the checkbox with client sessions to store the default form
+				//.checkbox
+					//input(type="checkbox" name="defaultform")Set as Default
+				.row.form-group
+					.col-md-4
+					.col-md-8
+						button.btn.btn-primary(type="submit") Submit
+		footer
+			| In case you do not know the form name please goto 
+			a(href="#") Help 
+			| for more details.
+	aside
+	

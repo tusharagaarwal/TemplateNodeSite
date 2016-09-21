@@ -1,0 +1,55 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+header, article, section, nav, footer, aside {
+	margin:0;
+}
+#maincontainer {
+	max-width: 1000px;
+	margin:0 auto;
+	min-height: 100vh;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+    -webkit-box-flex: 1;    /* WebKit */
+}
+#topheader {
+	padding:10px;
+	background: url('./images/weather.png');
+	background-repeat: repeat;
+	color: white;
+	text-shadow: 0 0 2px black;
+	border-bottom: solid 2px lightblue;
+}
+#contentsection {
+	display: -webkit-box;
+	border-left: solid 2px lightblue;
+	border-right: solid 2px lightblue;
+	-webkit-box-orient: vertical;
+    -webkit-box-flex: 1;    /* WebKit */
+}
+#contentsection > nav {
+
+}
+#contentsection > article {
+	padding: 15px;
+	margin: 10px;
+	border: solid 1px lightblue;
+	box-shadow: 0 0 5px lightblue;
+}
+#contentsection > article > header {
+	font-size: large;
+	font-weight: bold;
+	border-bottom: solid 1px lightblue;
+}
+#footerwidget {
+	text-align: center;
+	padding:10px;
+	background: url('./images/weather.png');
+	background-repeat: repeat;
+	color: white;
+	text-shadow: 0 0 2px black;
+	display: block;
+	clear: both;
+	border-top: solid 2px lightblue;
+}

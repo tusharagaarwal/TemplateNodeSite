@@ -1,0 +1,9 @@
+{
+	"applicationname": "Data File Generator",
+	"owner": "Tushar Agarwal",
+	"index": {
+		"filename": "./index.jade",
+		"pagetitle": "Home",
+		"formnames": ["HLAUPLD", "HLAGSPM"]
+	}
+}
